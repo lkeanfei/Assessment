@@ -12,11 +12,10 @@ desired_caps['deviceName'] = 'Galaxy Tab A'
 desired_caps['appPackage'] = 'com.zalora.android'
 desired_caps['appActivity'] = 'pt.rocket.view.activities.SplashScreenActivity'
 
-
 driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
 
 wait = WebDriverWait(driver, 20)
-wait.until(EC.element_to_be_clickable((By.ID, 'com.zalora.android:id/splash_item_name')))
+wait.until(EC.element_to_be_clickable((By.XPATH, "//*[@resource-id='com.zalora.android:id/title' and @text='SELECT LOCATION']")))
 
 malaysiaSelection = driver.find_element_by_xpath("//*[@resource-id='com.zalora.android:id/splash_item_name' and @text='MALAYSIA']")
 malaysiaSelection.click()

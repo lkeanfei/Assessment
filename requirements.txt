@@ -4,6 +4,7 @@ attrs==19.1.0
 colorama==0.4.1
 glob2==0.7
 importlib-metadata==0.18
+junit-xml==1.8
 Mako==1.0.14
 MarkupSafe==1.1.1
 more-itertools==7.2.0

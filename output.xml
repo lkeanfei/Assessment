@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="1" tests="2" time="47.50322127342224">
+	<testsuite disabled="0" errors="0" failures="1" name="test_scenario1.py" skipped="0" tests="1" time="11.064573049545288">
+		<testcase name="test_Scenario1_FacebookLogin" time="11.064573">
+			<failure message="mobileDriver = &lt;lib.MobileDriver.MobileDriver object at 0x000001395BF23828&gt;, request = &lt;FixtureRequest for &lt;Function test_Scenario1_FacebookLogin&gt;&gt;
+
+    def test_Scenario1_FacebookLogin(mobileDriver: MobileDriver):
+&gt;       print('step 1')
+
+test_scenario1.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+c:\digixvenv\lib\site-packages\pytest_bdd\scenario.py:195: in _execute_scenario
+    _execute_step_function(request, scenario, step, step_func)
+c:\digixvenv\lib\site-packages\pytest_bdd\scenario.py:136: in _execute_step_function
+    step_func(**kwargs)
+test_scenario1.py:50: in loginToFacebook
+    loginPage.facebookLoginFormExists()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;pageobjects.LoginPage.LoginPage object at 0x000001395BF51E48&gt;
+
+    def facebookLoginFormExists(self):
+    
+        contextList = self.mobileDriver.getAllContexts()
+    
+&gt;       assert &quot;WEBVIEW&quot; in contextList  , &quot;WEBVIEW context is not available. Available contexts are &quot; + &quot;,&quot;.join(contextList)
+E       AssertionError: WEBVIEW context is not available. Available contexts are NATIVE_APP
+
+pageobjects\LoginPage.py:72: AssertionError" type="failure"/>
+			<system-out>
+Given the Zalora App has completed Country and Language selection....passed
+When I login with Facebook....failed
+Then I should see language selection page....failed
+</system-out>
+		</testcase>
+	</testsuite>
+	<testsuite disabled="0" errors="0" failures="0" name="test_scenario2.py" skipped="0" tests="1" time="36.43864822387695">
+		<testcase name="test_Scenario1_FacebookLogin" time="36.438648">
+			<system-out>
+Given the Zalora App has completed Country and Language selection....passed
+When I login with Facebook....passed
+Then I should see language selection page....passed
+</system-out>
+		</testcase>
+	</testsuite>
+</testsuites>

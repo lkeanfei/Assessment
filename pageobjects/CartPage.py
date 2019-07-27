@@ -3,20 +3,22 @@ from lib.MobileDriver import MobileDriver
 from lib.MobileDriver import MOBILEFINDTAGS
 from selenium.webdriver.common.by import By
 
-class TutorialPage:
+
+class CartPage:
 
     def __init__(self , mobileDriver: MobileDriver):
 
         self.mobileDriver = mobileDriver
 
-        self.skipDict = {
+        self.quantityButtonDict = {
             MOBILEFINDTAGS.ANDROIDBYTAG : By.ID,
-            MOBILEFINDTAGS.ANDROIDTAG : 'com.zalora.android:id/tutorial_skip_button',
+            MOBILEFINDTAGS.ANDROIDTAG : "com.zalora.android:id/product_quantity_button",
             MOBILEFINDTAGS.IOSBYTAG : "Not implmented",
             MOBILEFINDTAGS.IOSTAG: "Not implmented",
-
         }
 
-    def skip(self):
+    def getQuantity(self):
 
-        self.mobileDriver.clickElement(self.skipDict)
+        elem = self.mobileDriver.getElement(self.quantityButtonDict)
+        return elem.text
+

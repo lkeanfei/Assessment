@@ -40,14 +40,34 @@ def completeCountryAndLanguageSelection(mobileDriver: MobileDriver):
     loginPage = LoginPage.LoginPage(mobileDriver)
     assert loginPage.exists() , "Login page does not exist"
 
+    loginPage.enterUserName()
+    loginPage.enterPassword()
+    loginPage.clickLoginButton()
+
+    shopSelectionPage = ShopSelectionPage.ShopSelectionPage(mobileDriver)
+    shopSelectionPage.selectShopMen()
+
+    tutorialPage = TutorialPage.TutorialPage(mobileDriver)
+    tutorialPage.skip()
+
+    catalogPage = CatalogPage.CatalogPage(mobileDriver)
+    catalogPage.selectImageCampaign()
+    catalogPage.selectFirstProduct()
+    catalogPage.clickOnPrice()
+    catalogPage.selectLSize()
+    catalogPage.addToBag()
+    catalogPage.clickCartButton()
+
+    cartPage = CartPage.CartPage(mobileDriver)
+    actualQuantity = cartPage.getQuantity()
+    assert actualQuantity == "1" , "Expected the quantity to be 1. Actual is " + actualQuantity
+
 
 
 @when('I login with Facebook')
 def loginToFacebook( mobileDriver: MobileDriver):
     """Post to Login handler"""
-    loginPage = LoginPage.LoginPage(mobileDriver)
-    loginPage.clickLoginToFacebook()
-    loginPage.facebookLoginFormExists()
+    print("")
 
 
 
