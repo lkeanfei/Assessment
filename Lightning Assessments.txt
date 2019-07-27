@@ -1,0 +1,23 @@
+What is RTM and its use in testing life cycle?
+RTM is the Requirement Traceability Matrix is the document that captures all requirements proposed by client , and it maps user requirement with test cases.
+The RTM is produced at the Requirement analysis phase. Next, based on the created RTM document , we do test planning to finalize the test approach.
+Given the completed RTM and test plan , we further develop the test cases and execute the test cases. In the case of defects , the defects are mapped to the test cases in RTM.
+
+
+- When should we run a regression test on an application?
+We should run regression tests whenever the application is modified to ensure the changes do not break the existing functionalities. It is recommended that the regressions
+tests are automated and hence cutting down the manual time cost. An even better approach is to have the automated tests be built into a CI pipline which the tests are executed automatically when developer checks in their code.
+
+- What is Database Testing and when should we consider testing database?
+Database Testing is the software testing that makes sure the data entered at frontend is saved as expected to the backend database. A more thorough database testing will involve schema testing, authentication/authorization testing, load testing and performance testing.
+We should consider database testing from the start of the software development cycle , which we need to have a plan to cover them when the schema changes , stored procedures changes or database migration.
+
+
+- What do you mean by Absolute and Relative xPaths? Which one should we
+consider to create our automation test scripts?
+Absolute xPaths uses complete xpath from the root element (html) to the desired element , e.g. /html/body/div , while relative xPaths simply reference the element which we want.
+We should use relative xPaths since absolute xpaths are more prone to regression as DOM changes will make them invalid.
+
+- What do you mean by Iterative and Incremental development approach?
+
+- Write Positive and at least 3 Negative test scenarios for below
