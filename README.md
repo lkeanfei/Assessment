@@ -31,11 +31,15 @@ pytest --os=iOS
 
 1. WebView is not available 
 >For Scenario 1 - Facebook Login to be fully automated , Appium needs to be able to detect the WebView in App. 
+
 >The developer will need to setWebContentsDebuggingEnabled in the app for Facebook login to proceed ,since the Facebook Login form is HTML based.
+
 >Kindly refer to the link 
 >https://developer.android.com/reference/android/webkit/WebView.html#setWebContentsDebuggingEnabled(boolean)
 
 2. iOS Code-Signing problem
 >The Zalora app is code-signed and prohibits unidentified developer do the coding and try to run the app on various devices.
+
 >In this case , there will be problems identifying the elements on the App for iOS devices.
+
 >Hence ,iOS automation is currently not supported.

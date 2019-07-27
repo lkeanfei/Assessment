@@ -19,5 +19,30 @@ Absolute xPaths uses complete xpath from the root element (html) to the desired 
 We should use relative xPaths since absolute xpaths are more prone to regression as DOM changes will make them invalid.
 
 - What do you mean by Iterative and Incremental development approach?
+Iterative development approach is about building the software product by small functionalities , step by step . The product to small parts .and small water fall , instead of 
+Development cycles are sprint cycles , bringing the features faster time to market.
 
 - Write Positive and at least 3 Negative test scenarios for below
+
+Postive
+
+1. Login with existing Facebook Account by entering email and password
+2. Register a new Facebook Account and login
+3. Login with existing Facebook Account without entering email and password
+
+Negative 
+1. Login with the incorrect email / password
+2. Close the login form halfway of login
+3. 
+
+
+Positive
+
+1. Select a product and checkout
+2. Select multiple products and checkout
+3. Select products and then cancel the products and checkout
+
+Negative
+1. Checkout without products
+2. Adding sold out items
+3. Entering big quantity
