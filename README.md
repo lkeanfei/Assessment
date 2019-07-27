@@ -7,7 +7,7 @@ Make sure that you have Python 3.7 installed on your system and execute
 pip install -r requirements.txt
 ```
 
-As there is no app given for Scenario 2 , I have used the Zalora app available from Google Playstore. Since it is the official release of the app ,
+As there is no app selected for the tests , I have used the Zalora app available from Google Playstore. Since it is the official release of the app ,
 there are some limitations for Appium auto tests.
 
 
@@ -15,14 +15,14 @@ there are some limitations for Appium auto tests.
 
 The tests can be run on Android by executing
 
-```python
+```
 pytest --os=Android
 ```
 
-or for on iOS (currently not supported , due to the limitations mentioned below)
+or for running on iOS (currently not supported , due to the limitations mentioned below)
 
 
-```python
+```
 pytest --os=iOS
 ```
 
@@ -30,14 +30,12 @@ pytest --os=iOS
 # Limitations
 
 1. WebView is not available 
-For Scenario 1 - Facebook Login to be fully automated , Appium needs to be able to detect the WebView in App. 
-The developer will need to setWebContentsDebuggingEnabled in the app for Facebook login to proceed ,since the Facebook Login form is HTML based.
-Kindly refer to the link 
-https://developer.android.com/reference/android/webkit/WebView.html#setWebContentsDebuggingEnabled(boolean)
+>For Scenario 1 - Facebook Login to be fully automated , Appium needs to be able to detect the WebView in App. 
+>The developer will need to setWebContentsDebuggingEnabled in the app for Facebook login to proceed ,since the Facebook Login form is HTML based.
+>Kindly refer to the link 
+>https://developer.android.com/reference/android/webkit/WebView.html#setWebContentsDebuggingEnabled(boolean)
 
 2. iOS Code-Signing problem
-The Zalora app is code-signed and prohibits unidentified developer do the coding and try to run the app on various devices.
-
-In this case , there will be problems identifying the elements on the App for iOS devices.
-
-Hence ,iOS 
+>The Zalora app is code-signed and prohibits unidentified developer do the coding and try to run the app on various devices.
+>In this case , there will be problems identifying the elements on the App for iOS devices.
+>Hence ,iOS automation is currently not supported.
