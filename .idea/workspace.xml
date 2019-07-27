@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e5579c6-4279-446a-b19c-497aaefbf029" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/MobileAction.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pageobjects/CartPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/DigiXTests.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DigiXTests.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenario1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scenario1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pageobjects/CatalogPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pageobjects/CatalogPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pageobjects/CountrySelectionPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pageobjects/CountrySelectionPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pageobjects/LanguageSelectionPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pageobjects/LanguageSelectionPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pageobjects/LoginPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pageobjects/LoginPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pageobjects/ShopSelectionPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pageobjects/ShopSelectionPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pageobjects/TutorialPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pageobjects/TutorialPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_scenario1.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_scenario1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -130,8 +116,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="289">
-                <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+              <first_editor relative-caret-position="357">
+                <caret line="21" column="57" lean-forward="true" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
               </first_editor>
               <second_editor />
             </state>
@@ -175,10 +161,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="1939" />
-    <option name="height" value="1049" />
+    <option name="x" value="674" />
+    <option name="y" value="28" />
+    <option name="width" value="1620" />
+    <option name="height" value="920" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -267,16 +253,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="674" y="28" width="1620" height="920" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23003802" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14096081" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.20323014" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.1931385" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -517,8 +503,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="289">
-            <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <first_editor relative-caret-position="357">
+            <caret line="21" column="57" lean-forward="true" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
           </first_editor>
           <second_editor />
         </state>
