@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e5579c6-4279-446a-b19c-497aaefbf029" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Digix Lightning Assessment Answers.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Digix Lightning Assessment Answers.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenario1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/output.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.log" beforeDir="false" afterPath="$PROJECT_DIR$/test.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_scenario2.feature" beforeDir="false" afterPath="$PROJECT_DIR$/test_scenario2.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_scenario2.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_scenario2.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +33,9 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_scenario2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-510" />
+            <state relative-caret-position="-51">
+              <caret line="28" column="57" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -35,7 +43,7 @@
         <entry file="file://$PROJECT_DIR$/pageobjects/TutorialPage.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+              <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
               <folding>
                 <element signature="e#1#42#0" expanded="true" />
               </folding>
@@ -80,7 +88,7 @@
         <entry file="file://$PROJECT_DIR$/lib/MobileDriver.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="183" lean-forward="true" selection-start-line="183" selection-end-line="183" />
+              <caret line="183" selection-start-line="183" selection-end-line="183" />
               <folding>
                 <element signature="e#2#13#0" expanded="true" />
               </folding>
@@ -88,12 +96,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="408">
-                <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+              <first_editor relative-caret-position="272">
+                <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
               </first_editor>
               <second_editor />
             </state>
@@ -104,16 +112,16 @@
         <entry file="file://$PROJECT_DIR$/output.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="291">
-              <caret line="38" column="22" lean-forward="true" selection-start-line="36" selection-end-line="44" selection-end-column="16" />
+              <caret line="38" column="16" lean-forward="true" selection-start-line="37" selection-end-line="45" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_scenario2.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
+            <state relative-caret-position="68">
+              <caret line="4" column="59" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -150,11 +158,13 @@
         <option value="$PROJECT_DIR$/pageobjects/LoginPage.py" />
         <option value="$PROJECT_DIR$/test_scenario1.py" />
         <option value="$PROJECT_DIR$/lib/MobileDriver.py" />
+        <option value="$PROJECT_DIR$/test_scenario2.feature" />
+        <option value="$PROJECT_DIR$/test_scenario2.py" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="674" />
     <option name="y" value="28" />
     <option name="width" value="1620" />
@@ -247,7 +257,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14131813" />
@@ -268,47 +278,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Scenario1.py</url>
-          <line>106</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Scenario1.py</url>
-          <line>102</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Scenario1.py</url>
-          <line>84</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Scenario1.py</url>
-          <line>82</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Scenario1.py</url>
-          <line>74</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Scenario1.py</url>
-          <line>70</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Scenario1.py</url>
-          <line>16</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
@@ -449,7 +418,7 @@
     <entry file="file://$PROJECT_DIR$/pageobjects/TutorialPage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
           <folding>
             <element signature="e#1#42#0" expanded="true" />
           </folding>
@@ -466,9 +435,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_scenario2.py">
+    <entry file="file://$PROJECT_DIR$/lib/MobileDriver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-510" />
+        <state relative-caret-position="187">
+          <caret line="183" selection-start-line="183" selection-end-line="183" />
+          <folding>
+            <element signature="e#2#13#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_scenario1.py">
@@ -481,37 +455,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/MobileDriver.py">
+    <entry file="file://$PROJECT_DIR$/test_scenario2.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="183" lean-forward="true" selection-start-line="183" selection-end-line="183" />
-          <folding>
-            <element signature="e#2#13#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="4" column="59" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="59" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="408">
-            <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/test_scenario2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="28" column="57" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/output.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
-          <caret line="38" column="22" lean-forward="true" selection-start-line="36" selection-end-line="44" selection-end-column="16" />
+          <caret line="38" column="16" lean-forward="true" selection-start-line="37" selection-end-line="45" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_scenario2.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="272">
+            <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

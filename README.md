@@ -1,6 +1,8 @@
 # Assessment
 
-The tests are written in Python and they are developed based on Pytest framework.
+The answers for Section 1 is documented inside the file Digix Lightning Assessment Answers.docx
+
+For section 2 ,the tests are written in Python and they are developed based on Pytest framework.
 Make sure that you have Python 3.7 installed on your system and execute 
 
 ```python
@@ -31,7 +33,15 @@ pytest --os=iOS
 The test results are output as Junit files and here is a sample of the test results 
 
 ```
- 
+ 	<testsuite disabled="0" errors="0" failures="0" name="test_scenario2.py" skipped="0" tests="1" time="32.09598731994629">
+		<testcase name="test_Scenario2_OrderTransaction" time="32.095987">
+			<system-out>
+Given that Country and Language Selection has completed....passed
+When I select and add product to cart....passed
+Then I should be able to checkout successfully....passed
+</system-out>
+		</testcase>
+	</testsuite>
 ```
 # Limitations
 

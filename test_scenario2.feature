@@ -1,7 +1,7 @@
-Feature: Facebook Login
-    Facebook Login testing
+Feature: Order Transaction
+    Order Transaction testing
 
-Scenario: Facebook Login
-    Given the Zalora App has completed Country and Language selection
-    When I login with Facebook
-    Then I should see language selection page
+Scenario: Order Transaction
+    Given that Country and Language Selection has completed
+    When I select and add product to cart
+    Then I should be able to checkout successfully

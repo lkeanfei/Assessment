@@ -20,13 +20,13 @@ from pytest_bdd import (
     when,
 )
 
-@scenario('test_scenario1.feature', 'Facebook Login')
-def test_Scenario1_FacebookLogin(mobileDriver: MobileDriver):
+@scenario('test_scenario2.feature', 'Order Transaction')
+def test_Scenario2_OrderTransaction(mobileDriver: MobileDriver):
     print('step 1')
 
 
 
-@given('the Zalora App has completed Country and Language selection')
+@given('that Country and Language Selection has completed')
 def completeCountryAndLanguageSelection(mobileDriver: MobileDriver):
     """Sets up """
     countrySelectionPage = CountrySelectionPage.CountrySelectionPage(mobileDriver)
@@ -44,6 +44,13 @@ def completeCountryAndLanguageSelection(mobileDriver: MobileDriver):
     loginPage.enterPassword()
     loginPage.clickLoginButton()
 
+
+
+
+
+@when('I select and add product to cart')
+def selectAndAddProductToCart( mobileDriver: MobileDriver):
+    """Post to Login handler"""
     shopSelectionPage = ShopSelectionPage.ShopSelectionPage(mobileDriver)
     shopSelectionPage.selectShopMen()
 
@@ -60,20 +67,13 @@ def completeCountryAndLanguageSelection(mobileDriver: MobileDriver):
 
     cartPage = CartPage.CartPage(mobileDriver)
     actualQuantity = cartPage.getQuantity()
-    assert actualQuantity == "1" , "Expected the quantity to be 1. Actual is " + actualQuantity
-
-
-
-@when('I login with Facebook')
-def loginToFacebook( mobileDriver: MobileDriver):
-    """Post to Login handler"""
-    print("")
+    assert actualQuantity == "1", "Expected the quantity to be 1. Actual is " + actualQuantity
 
 
 
 
-@then('I should see language selection page')
-def shouldSeeHTTP202Code( mobileDriver: MobileDriver):
+@then('I should be able to checkout successfully')
+def shouldBeAbleToCheckout( mobileDriver: MobileDriver):
     """I should not see the error message."""
 
 
