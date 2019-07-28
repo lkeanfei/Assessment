@@ -26,7 +26,13 @@ or for running on iOS (currently not supported , due to the limitations mentione
 pytest --os=iOS
 ```
 
+## Test results
 
+The test results are output as Junit files and here is a sample of the test results 
+
+```
+ 
+```
 # Limitations
 
 1. WebView is not available 
