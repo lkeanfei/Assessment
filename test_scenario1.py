@@ -53,7 +53,7 @@ def loginToFacebook( mobileDriver: MobileDriver):
 
 
 @then('I should see language selection page')
-def shouldSeeHTTP202Code( mobileDriver: MobileDriver):
+def shouldSeeLanguageSelectionPage( mobileDriver: MobileDriver):
     """I should not see the error message."""
 
 

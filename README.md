@@ -15,6 +15,12 @@ there are some limitations for Appium auto tests.
 ## Setup the tests
 - Install the Zalora App from Google playstore , https://play.google.com/store/apps/details?id=com.zalora.android&hl=en
 - Download and install Node.js (LTS version) from https://nodejs.org/en/download/
+- Download and install Android Studio and Android SDK
+- Setup the environment variable ANDROID_HOME to 
+```
+C:\Users\<YourUser>\AppData\Local\Android\Sdk
+```
+
 - Start a command prompt and install appium
 ```
 npm install -g appium@1.13.0
@@ -26,10 +32,12 @@ appium
 
 
 ##  Running the tests
+There are 2 automated tests , test_scenario1.py and test_scenario2.py. Both are BDD tests which have their respective
+Gherkin files defined in their feature files.
 
 The tests are designed in a way to maximize reusability. Page Object libraries are created to encapsulate the page properties and actions.
 
-We 
+The same tests can be run on both Android and iOS without much modification , as the differences in the XPath are encapsulated in the page object libraries.
 
 The tests can be run on Android by executing
 
@@ -82,3 +90,13 @@ Then I should be able to checkout successfully....passed
 
 3. Paypal sandbox test account 
 > For the tests to be able to complete the Paypal payment , it would require the app developer to enable sandbox test account on their account
+
+
+# Debugging tips
+
+- If you are seeing the following error during the test run 
+
+```
+ selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+..\digixvenv\lib\site-packages\selenium\webdriver\remote\errorhandler.py:242: WebDriverException
+```

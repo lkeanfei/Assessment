@@ -38,6 +38,7 @@ class MobileDriver:
             desired_caps['platformName'] = 'Android'
             desired_caps['platformVersion'] = '8.1'
             desired_caps['automationName'] = 'uiautomator2'
+            desired_caps['newCommandTimeout'] = 180
             desired_caps['deviceName'] = 'Galaxy Tab A'
             desired_caps['appPackage'] = 'com.zalora.android'
             desired_caps['appActivity'] = 'pt.rocket.view.activities.SplashScreenActivity'
@@ -113,7 +114,7 @@ class MobileDriver:
         # logging.getLogger().info(tag)
 
         wait = WebDriverWait(self.driver,20)
-        wait.until(EC.element_to_be_clickable((byTag, tag)))
+        wait.until(EC.visibility_of_element_located((byTag, tag)))
 
         if index == 1:
 

@@ -6,7 +6,7 @@ from lib.MobileDriver import MobileDriver
 from pageobjects import CountrySelectionPage
 from pageobjects import LanguageSelectionPage
 from pageobjects import LoginPage
-from pageobjects import ShopSelectionPage , TutorialPage , CatalogPage , CartPage
+from pageobjects import ShopSelectionPage , TutorialPage , CatalogPage , CartPage , CheckoutPage
 from selenium.webdriver.support.ui import WebDriverWait
 
 import logging
@@ -66,8 +66,11 @@ def selectAndAddProductToCart( mobileDriver: MobileDriver):
     catalogPage.clickCartButton()
 
     cartPage = CartPage.CartPage(mobileDriver)
-    actualQuantity = cartPage.getQuantity()
-    assert actualQuantity == "1", "Expected the quantity to be 1. Actual is " + actualQuantity
+    strActualQuantity = cartPage.getQuantity()
+    actualQuantity = int(strActualQuantity)
+    assert actualQuantity > 0, "Expected the quantity to be more than 0. Actual is " + actualQuantity
+
+    cartPage.goToCheckout()
 
 
 
@@ -75,6 +78,9 @@ def selectAndAddProductToCart( mobileDriver: MobileDriver):
 @then('I should be able to checkout successfully')
 def shouldBeAbleToCheckout( mobileDriver: MobileDriver):
     """I should not see the error message."""
+
+    checkoutPage = CheckoutPage.CheckoutPage(mobileDriver)
+    # checkoutPage.continuePaymentMode()
 
 
 

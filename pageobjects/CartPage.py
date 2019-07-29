@@ -17,8 +17,19 @@ class CartPage:
             MOBILEFINDTAGS.IOSTAG: "Not implmented",
         }
 
+        self.goToCheckoutDict = {
+            MOBILEFINDTAGS.ANDROIDBYTAG: By.ID,
+            MOBILEFINDTAGS.ANDROIDTAG: "com.zalora.android:id/checkout_button",
+            MOBILEFINDTAGS.IOSBYTAG: "Not implmented",
+            MOBILEFINDTAGS.IOSTAG: "Not implmented",
+        }
+
     def getQuantity(self):
 
         elem = self.mobileDriver.getElement(self.quantityButtonDict)
         return elem.text
+
+    def goToCheckout(self):
+
+        self.mobileDriver.clickElement(self.goToCheckoutDict)
 
