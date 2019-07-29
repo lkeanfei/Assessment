@@ -100,3 +100,11 @@ Then I should be able to checkout successfully....passed
  selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
 ..\digixvenv\lib\site-packages\selenium\webdriver\remote\errorhandler.py:242: WebDriverException
 ```
+Remove the uiautomator2 from the device.
+Start a command prompt and execute
+```
+adb uninstall io.appium.uiautomator2.server
+adb uninstall io.appium.uiautomator2.server.test
+```
+
+Next , restart the Appium Server

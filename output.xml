@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
-<testsuites disabled="0" errors="0" failures="1" tests="2" time="74.37408185005188">
-	<testsuite disabled="0" errors="0" failures="1" name="test_scenario1.py" skipped="0" tests="1" time="13.02793836593628">
-		<testcase name="test_Scenario1_FacebookLogin" time="13.027938">
-			<failure message="mobileDriver = &lt;lib.MobileDriver.MobileDriver object at 0x000001B938619F88&gt;, request = &lt;FixtureRequest for &lt;Function test_Scenario1_FacebookLogin&gt;&gt;
+<testsuites disabled="0" errors="0" failures="1" tests="2" time="71.78137493133545">
+	<testsuite disabled="0" errors="0" failures="1" name="test_scenario1.py" skipped="0" tests="1" time="34.17926812171936">
+		<testcase name="test_Scenario1_FacebookLogin" time="34.179268">
+			<failure message="mobileDriver = &lt;lib.MobileDriver.MobileDriver object at 0x00000265C0A30C48&gt;, request = &lt;FixtureRequest for &lt;Function test_Scenario1_FacebookLogin&gt;&gt;
 
     def test_Scenario1_FacebookLogin(mobileDriver: MobileDriver):
 &gt;       print('step 1')
@@ -13,29 +13,67 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
     _execute_step_function(request, scenario, step, step_func)
 ..\digixvenv\lib\site-packages\pytest_bdd\scenario.py:136: in _execute_step_function
     step_func(**kwargs)
-test_scenario1.py:50: in loginToFacebook
-    loginPage.facebookLoginFormExists()
+..\digixvenv\lib\site-packages\pytest_bdd\steps.py:164: in step_func
+    result = request.getfixturevalue(func.__name__)
+..\digixvenv\lib\site-packages\_pytest\fixtures.py:471: in getfixturevalue
+    return self._get_active_fixturedef(argname).cached_result[0]
+..\digixvenv\lib\site-packages\_pytest\fixtures.py:494: in _get_active_fixturedef
+    self._compute_fixture_value(fixturedef)
+..\digixvenv\lib\site-packages\_pytest\fixtures.py:575: in _compute_fixture_value
+    fixturedef.execute(request=subrequest)
+..\digixvenv\lib\site-packages\_pytest\fixtures.py:883: in execute
+    return hook.pytest_fixture_setup(fixturedef=self, request=request)
+..\digixvenv\lib\site-packages\pluggy\hooks.py:289: in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+..\digixvenv\lib\site-packages\pluggy\manager.py:87: in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+..\digixvenv\lib\site-packages\pluggy\manager.py:81: in &lt;lambda&gt;
+    firstresult=hook.spec.opts.get(&quot;firstresult&quot;) if hook.spec else False,
+..\digixvenv\lib\site-packages\_pytest\fixtures.py:923: in pytest_fixture_setup
+    result = call_fixture_func(fixturefunc, request, kwargs)
+..\digixvenv\lib\site-packages\_pytest\fixtures.py:783: in call_fixture_func
+    res = fixturefunc(**kwargs)
+test_scenario1.py:41: in completeCountryAndLanguageSelection
+    assert loginPage.exists() , &quot;Login page does not exist&quot;
+pageobjects\LoginPage.py:61: in exists
+    return self.mobileDriver.elementExists(self.loginPageDict)
+lib\MobileDriver.py:174: in elementExists
+    wait.until(EC.element_to_be_clickable((byTag, tag)))
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
-self = &lt;pageobjects.LoginPage.LoginPage object at 0x000001B93864A548&gt;
+self = &lt;selenium.webdriver.support.wait.WebDriverWait (session=&quot;7cae8d7a-10d3-4e52-81c0-3c721fa07b61&quot;)&gt;, method = &lt;selenium.webdriver.support.expected_conditions.element_to_be_clickable object at 0x00000265C0A87188&gt;, message = ''
 
-    def facebookLoginFormExists(self):
+    def until(self, method, message=''):
+        &quot;&quot;&quot;Calls the method provided with the driver as an argument until the \
+        return value is not False.&quot;&quot;&quot;
+        screen = None
+        stacktrace = None
     
-        contextList = self.mobileDriver.getAllContexts()
-    
-&gt;       assert &quot;WEBVIEW&quot; in contextList  , &quot;WEBVIEW context is not available. Available contexts are &quot; + &quot;,&quot;.join(contextList)
-E       AssertionError: WEBVIEW context is not available. Available contexts are NATIVE_APP
+        end_time = time.time() + self._timeout
+        while True:
+            try:
+                value = method(self._driver)
+                if value:
+                    return value
+            except self._ignored_exceptions as exc:
+                screen = getattr(exc, 'screen', None)
+                stacktrace = getattr(exc, 'stacktrace', None)
+            time.sleep(self._poll)
+            if time.time() &gt; end_time:
+                break
+&gt;       raise TimeoutException(message, screen, stacktrace)
+E       selenium.common.exceptions.TimeoutException: Message:
 
-pageobjects\LoginPage.py:72: AssertionError" type="failure"/>
+..\digixvenv\lib\site-packages\selenium\webdriver\support\wait.py:80: TimeoutException" type="failure"/>
 			<system-out>
-Given the Zalora App has completed Country and Language selection....passed
+Given the Zalora App has completed Country and Language selection....failed
 When I login with Facebook....failed
 Then I should see language selection page....failed
 </system-out>
 		</testcase>
 	</testsuite>
-	<testsuite disabled="0" errors="0" failures="0" name="test_scenario2.py" skipped="0" tests="1" time="61.3461434841156">
-		<testcase name="test_Scenario2_OrderTransaction" time="61.346143">
+	<testsuite disabled="0" errors="0" failures="0" name="test_scenario2.py" skipped="0" tests="1" time="37.60210680961609">
+		<testcase name="test_Scenario2_OrderTransaction" time="37.602107">
 			<system-out>
 Given that Country and Language Selection has completed....passed
 When I select and add product to cart....passed

@@ -1,15 +1,15 @@
-2019-07-29 10:49:16,263 - Runtest protocol for E:\Digix\Assessment\test_scenario1.py. script list 
-2019-07-29 10:49:16,264 - Cleared tesCaseList! it is a new script! E:\Digix\Assessment\test_scenario1.py
-2019-07-29 10:49:54,030 - OS is Android
-2019-07-29 10:50:07,183 - Runtest protocol for E:\Digix\Assessment\test_scenario2.py. script list E:\Digix\Assessment\test_scenario1.py
-2019-07-29 10:50:07,184 - Cleared tesCaseList! it is a new script! E:\Digix\Assessment\test_scenario2.py
-2019-07-29 10:50:36,719 - OS is Android
-2019-07-29 10:50:51,328 - {'AndroidByTag': 'id', 'AndroidTag': 'com.zalora.android:id/edit_text', 'IosByTag': 'Not implmented', 'IosTag': 'Not implmented'}
-2019-07-29 10:50:51,329 - id
-2019-07-29 10:50:51,329 - com.zalora.android:id/edit_text
-2019-07-29 10:50:53,249 - {'AndroidByTag': 'id', 'AndroidTag': 'com.zalora.android:id/password_field_id', 'IosByTag': 'Not implmented', 'IosTag': 'Not implmented'}
-2019-07-29 10:50:53,249 - id
-2019-07-29 10:50:53,250 - com.zalora.android:id/password_field_id
-2019-07-29 10:51:19,543 - {'AndroidByTag': 'id', 'AndroidTag': 'com.zalora.android:id/product_quantity_button', 'IosByTag': 'Not implmented', 'IosTag': 'Not implmented'}
-2019-07-29 10:51:19,543 - id
-2019-07-29 10:51:19,544 - com.zalora.android:id/product_quantity_button
+2019-07-29 10:55:34,040 - Runtest protocol for E:\Digix\Assessment\test_scenario1.py. script list 
+2019-07-29 10:55:34,041 - Cleared tesCaseList! it is a new script! E:\Digix\Assessment\test_scenario1.py
+2019-07-29 10:56:07,714 - OS is Android
+2019-07-29 10:56:45,763 - Runtest protocol for E:\Digix\Assessment\test_scenario2.py. script list E:\Digix\Assessment\test_scenario1.py
+2019-07-29 10:56:45,763 - Cleared tesCaseList! it is a new script! E:\Digix\Assessment\test_scenario2.py
+2019-07-29 10:57:16,276 - OS is Android
+2019-07-29 10:57:27,940 - {'AndroidByTag': 'id', 'AndroidTag': 'com.zalora.android:id/edit_text', 'IosByTag': 'Not implmented', 'IosTag': 'Not implmented'}
+2019-07-29 10:57:27,941 - id
+2019-07-29 10:57:27,942 - com.zalora.android:id/edit_text
+2019-07-29 10:57:28,933 - {'AndroidByTag': 'id', 'AndroidTag': 'com.zalora.android:id/password_field_id', 'IosByTag': 'Not implmented', 'IosTag': 'Not implmented'}
+2019-07-29 10:57:28,933 - id
+2019-07-29 10:57:28,934 - com.zalora.android:id/password_field_id
+2019-07-29 10:57:51,365 - {'AndroidByTag': 'id', 'AndroidTag': 'com.zalora.android:id/product_quantity_button', 'IosByTag': 'Not implmented', 'IosTag': 'Not implmented'}
+2019-07-29 10:57:51,366 - id
+2019-07-29 10:57:51,367 - com.zalora.android:id/product_quantity_button
